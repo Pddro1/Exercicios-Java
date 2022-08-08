@@ -1,6 +1,5 @@
 package ExerciciosJava; 
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Exercicio2 {
@@ -9,19 +8,33 @@ public class Exercicio2 {
 		
 		Scanner leia = new Scanner(System.in);
 		
-		int[] num = new int[3];
+		double a,b,c;
 		
-		System.out.println("\nDigite o Primeiro numero: ");
-		num[1] = leia.nextInt();
+		System.out.println("\nEntre com o A: ");
+		a = leia.nextDouble();
+		System.out.println("\nEntre com o B: ");
+		b = leia.nextDouble();
+		System.out.println("\nEntre com o C: ");
+		c = leia.nextDouble();
 		
-		System.out.println("\nDigite o Segundo numero: ");
-		num[2] = leia.nextInt();
-		
-		System.out.println("\nDigite o Terceiro numero: ");
-		num[3] = leia.nextInt();
-		
-		
-		System.out.println(num[3]);
+		if(a<b && b<c) {
+			System.out.println("\n1-Ordem crescente: "+a+", "+b+", "+c);
+		}
+		else if (a<c && c<b) {
+			System.out.println("\n2-Ordem crescente: "+a+", "+c+", "+b);
+		}
+		else if(b<a && a<c) {
+			System.out.println("\n3-Ordem crescente: "+b+", "+a+", "+c);
+		}
+		else if(b<c && c<a) {
+			System.out.println("\n4-Ordem crescente: "+b+", "+c+", "+a);
+		}
+		else if(c<a && a<b) {
+			System.out.println("\n5-Ordem crescente: "+c+", "+a+", "+b);
+		}
+		else {
+			System.out.println("\n6-Ordem crescente: "+c+", "+b+", "+a);
+		}
 
 	}
 
