@@ -8,24 +8,27 @@ public class Exercicio1 {
 		
 		Scanner leia = new Scanner(System.in);
 		
-		int num,maiorn=0;
+		int num=0,maiorn=0;
 		
-		System.out.println("\nDigite o Primeiro Numero: ");
-		num = leia.nextInt();
-		System.out.println("\nDigite o Segundo Numero: ");
-		num = leia.nextInt();		
-		System.out.println("\nDigite o Terceiro Numero: ");
-		num = leia.nextInt();
+		do {
+			
+			System.out.println("\nDigite um numero: ");
+			num = leia.nextInt();
+				
+			if(maiorn<num) {
+				maiorn=num;
+				}
+				
+		}while(num!=0); 
+				
+			System.out.println("\nMaior Numero: "+maiorn);
 		
-		if(num>maiorn) {
-			maiorn=num;
-		}
 		
-		System.out.println("\nMaior Numero: "+maiorn);
+		
+	
 	}
 	
 }
-
 	
 
 
