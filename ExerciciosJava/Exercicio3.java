@@ -23,6 +23,9 @@ public class Exercicio3 {
 		else if(i>=18 && i<=25) {
 			System.out.println("\nAdulto");
 		}
+		else {
+			System.out.println("\nIdade Invalida");
+		}
 		
 	}
 
