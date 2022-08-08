@@ -1,4 +1,4 @@
-package ExerciciosJava;
+package LacoDecisaoJava;
 
 import java.util.Scanner;
 
